@@ -12,7 +12,7 @@ from RPA.Browser.Selenium import By
 from RPA.Excel.Files import Files
 from robocorp.tasks import task
 
-class WebScrapper:
+class WebScraper:
     CURRENT_DIRECTORY = os.getcwd()
     OUTPUT_FOLDER = f"{CURRENT_DIRECTORY}/output"
     PARAMETERS_FILENAME = f"{CURRENT_DIRECTORY}/properties.json"
@@ -279,13 +279,13 @@ class WebScrapper:
 
 @task
 def main():
-    WebScrapperBot = WebScrapper()
-    WebScrapperBot.open_website()
-    WebScrapperBot.begin_search()
-    WebScrapperBot.select_topic()
-    WebScrapperBot.sort_newest_news()
-    WebScrapperBot.set_month_range()
-    WebScrapperBot.extract_website_data()
-    WebScrapperBot.close_browser()
-    WebScrapperBot.print_and_log("info","Bot execution finished")
+    WebScraperBot = WebScraper()
+    WebScraperBot.open_website()
+    WebScraperBot.begin_search()
+    WebScraperBot.select_topic()
+    WebScraperBot.sort_newest_news()
+    WebScraperBot.set_month_range()
+    WebScraperBot.extract_website_data()
+    WebScraperBot.close_browser()
+    WebScraperBot.print_and_log("info","Bot execution finished")
         
