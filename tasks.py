@@ -16,8 +16,9 @@ class WebScraper:
     CURRENT_DIRECTORY = os.getcwd()
     OUTPUT_FOLDER = f"{CURRENT_DIRECTORY}/output"
     PARAMETERS_FILENAME = f"{CURRENT_DIRECTORY}/properties.json"
-    LOG_FOLDER = f"{OUTPUT_FOLDER}/Log"
-    IMAGES_FOLDER = f"{OUTPUT_FOLDER}/Images"
+    #LOG_FOLDER = f"{OUTPUT_FOLDER}/Log"
+    LOG_FOLDER = OUTPUT_FOLDER
+    IMAGES_FOLDER = OUTPUT_FOLDER
     TODAY = datetime.now()
     TODAY_STR = TODAY.strftime("%m%d%Y")
     LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
